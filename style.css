@@ -1,0 +1,125 @@
+.container {
+    display: block;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.shapes {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#triangleImage {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+}
+
+#rectangleImage {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    z-index: 2;
+}
+
+.hamburger {
+    box-sizing: border-box;
+    margin-right: 32px;
+
+}
+
+.rec {
+    background-color: black;
+    width: 32px;
+    height: 5px;
+    display: block;
+    position: absolute;
+
+}
+
+.rectangle1 {
+    top: 29px;
+}
+
+.rectangle2 {
+    top: 39px;
+}
+
+.rectangle3 {
+    top: 49px;
+}
+
+/* main-css*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 100px;
+}
+
+.header {
+    font-family: Playfair, 'Playfair Display', Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 4px 32px;
+    color: #1A2236;
+}
+
+.discription {
+    margin: 15px 32px;
+    color: #1A2236;
+    font-family: 'Poppins';
+    font-size: 17px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
+
+.primary-button {
+    margin: 32px 0px;
+    display: flex;
+    background-color: #1A2236;
+    justify-content: center;
+
+}
+
+.primary-button button {
+    flex: 1;
+    background-color: #1A2236;
+    padding: 12px 42px;
+    font-family: 'Poppins';
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+.primary-button button:hover {
+    border: 1px solid #1A2236;
+    background-color: white;
+    color: #1A2236;
+}
+
+.primary-button button:active {
+    border: 2px solid #1A2236;
+    background-color: white;
+    color: #1A2236;
+}
+
+.bg-image img {
+    left: 0;
+    margin-top: 42px;
+    width: 100%;
+}
