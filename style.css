@@ -112,8 +112,11 @@
   color: #1a2236;
 }
 
-.bg-image img {
-  left: 0;
+.footer {
   margin-top: 42px;
-  width: 100%;
+  background: #fff url(/images/bg-cover-page.jpg) no-repeat;
+  background-size: 500px auto;
+  background-position: center;
+  width: auto;
+  height: 200px;
 }
