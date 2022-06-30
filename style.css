@@ -115,8 +115,8 @@
 .footer {
   margin-top: 42px;
   background: #fff url(/images/bg-cover-page.jpg) no-repeat;
-  background-size: 500px auto;
+  background-size: cover;
   background-position: center;
   width: auto;
-  height: 200px;
+  height: 250px;
 }
