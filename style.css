@@ -100,6 +100,100 @@
   text-align: center;
 }
 
+.footer {
+  margin-top: 42px;
+  background: #fff url(/images/bg-cover-page.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 250px;
+}
+
+/* Work-section */
+
+.work h1 {
+  font-family: 'Playfair', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.work .project {
+  width: fit-content;
+  background: #1a2236;
+  color: #fff;
+  padding: 0%;
+}
+
+.project img {
+  width: 100%;
+  background-clip: border-box;
+}
+
+.project h3 {
+  margin: 25px 32px 5px 32px;
+  font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+  font-weight: lighter;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.project .tech-stack {
+  display: grid;
+  margin: 25px 32px 5px 32px;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  row-gap: 15px;
+  color: rgb(54, 52, 52);
+}
+
+.project .tech-stack span {
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background: #98dede;
+  text-align: center;
+  color: rgb(54, 52, 52);
+}
+
+.project button {
+  margin: 25px 32px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  background: #1a2236;
+  text-align: left;
+  color: #fff;
+}
+
+.project button i {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* hover-effects */
+.project button:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.project button:active {
+  border: 2px solid #fff;
+}
+
+.project > button:hover i {
+  color: #1a2236;
+}
+
 .primary-button button:hover {
   border: 1px solid #1a2236;
   background-color: white;
@@ -112,155 +206,78 @@
   color: #1a2236;
 }
 
-.footer {
-  margin-top: 42px;
-  background: #fff url(/images/bg-cover-page.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: auto;
-  height: 250px;
-}
-/* Work-section */
-
-.work h1{
-  font-family:'Playfair',sans-serif;
-font-size: 50px;
-font-weight: 400;
-line-height: 50px;
-letter-spacing: 0em;
-text-align: left;
-}
-.work .project{
-width: fit-content;
-background:#1A2236 ;
-color: #FFFFFF;
-padding: 0%;
-}
-.project img{
-  width:100%;
-  background-clip: border-box;
-}
-.project h3{
-margin: 25px 32px 5px 32px;
-font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 26px;
-font-weight: lighter;
-line-height: 16px;
-letter-spacing: .05em;
-text-align: left;
-
-}
-.project .tech-stack{
-  display: grid;
-  margin: 25px 32px 5px 32px;
-  grid-template-columns: auto auto auto;
-  column-gap: 20px;
-  row-gap: 15px;
-  color: rgb(54, 52, 52);
-}
-.project .tech-stack span{
-  padding: 5px 10px;
-  border:1px solid #000;
-  background:#98DEDE;
-  text-align: center;
-  color: rgb(54, 52, 52);
-}
-.project button{
-  margin: 25px 32px;
-  font-family: 'Poppins',sans-serif;
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0em;  
-  padding:15px 25px;
-  border:1px solid #fff;
-  background:#1A2236 ;
-  text-align: left;
-  color: #fff;
-}
-.project button i{
-  margin-left: 10px;
-  color: #fff;
-  font-size: 22px;
-}
-.project button:hover{
-  background: #FFFFFF;
-  color: #1A2236;
-  border:2px solid #1A2236;
-}
-.project button:hover i{
-  color: #1A2236;
-}
-.project button:active{
-  border:2px solid #fff;
-}
-
 /* About-section */
 
-.about-us{
-padding: 25px;
+.about-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px;
 }
-.about-us h1{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif,sans-serif;
+
+.about-us h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
   font-size: 50px;
   font-weight: 400;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   margin-bottom: 0%;
-  
 }
-.about-us p{
+
+.about-us p {
   width: 380px;
   text-align: justify;
 }
-.about-us .button{
+
+.about-us .button {
   display: flex;
-  background: #1A2236;
+  background: #1a2236;
   justify-content: center;
   align-items: center;
   padding: 12px;
-  
 }
-.about-us .button small{
-font-family: 'Poppins', sans-serif;
-font-size: 20px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.01em;
-text-align: center;
-color: #FFFFFF;
 
+.about-us .button small {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
 }
-.about-us .button div{
+
+.about-us .button div {
   width: 20px;
   height: 20px;
   padding: 5px;
   margin-left: 15px;
-  background:#1A2236;
+  background: #1a2236;
   border: 2px solid #fff;
   border-top: none;
   color: #fff;
-  text-indent: .05em;
-  
+  text-indent: 0.05em;
   font-size: 20px;
-
 }
-.about-us .skills{
+
+.about-us .skills {
   padding: 45px;
   margin: 20px 0;
-  color: #FFFFFF;
-  width:296px;
+  color: #fff;
 }
-.about-us .lang{
-background: #1C528A url(/images/lang-bg.png) right bottom no-repeat;
 
+.about-us .lang {
+  background: #1c528a url(/images/lang-bg.png) right bottom no-repeat;
 }
-.about-us .framework{
-  background-color: #E2505C;
-  background-image:url(/images/framework-bg2.png),url(/images/framework-bg.png);
-  background-repeat:no-repeat ;
-  background-position: right bottom,right bottom;
+
+.about-us .framework {
+  background-color: #e2505c;
+  background-image: url(/images/framework-bg2.png), url(/images/framework-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom, right bottom;
 }
-.about-us .skill{
-  background: #FEBF52 url(/images/skill-bg.png) right bottom no-repeat;
+
+.about-us .skill {
+  background: #febf52 url(/images/skill-bg.png) right bottom no-repeat;
 }
