@@ -112,7 +112,7 @@
 /* Work-section */
 .work {
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: 360px;
 }
 
 .work h1 {
@@ -141,7 +141,7 @@
 }
 
 .project h3 {
-  margin: 25px 32px 0 40px;
+  margin: 25px 10px 0 20px;
   font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 26px;
   font-weight: lighter;
@@ -152,7 +152,8 @@
 
 .project .list-tech {
   list-style: none;
-  margin: 20px 20px 0 0;
+  margin: 20px 20px 0 20px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -161,7 +162,7 @@
 
 .project .list-tech li {
   display: inline;
-  margin-right: 1px;
+  margin-right: 2px;
   padding: 7px 9px;
   border: 1px solid #000;
   background: #98dede;
@@ -171,7 +172,7 @@
 
 .project button {
   width: fit-content;
-  margin: 15px 40px;
+  margin: 15px 20px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -194,7 +195,7 @@
 
 .about-us {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 360px;
   width: fit-content;
   padding: 10px;
 }
@@ -209,7 +210,7 @@
 }
 
 .about-us p {
-  width: 340px;
+  width: 350px;
   text-align: justify;
 }
 
@@ -219,6 +220,7 @@
   justify-content: center;
   align-items: center;
   padding: 12px;
+
 }
 
 .about-us .button small {
@@ -245,7 +247,7 @@
 }
 
 .about-us .skills {
-  padding: 45px;
+  padding: 32px;
   margin: 20px 0;
   color: #fff;
 }
