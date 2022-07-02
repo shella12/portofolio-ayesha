@@ -110,6 +110,10 @@
 }
 
 /* Work-section */
+.work {
+  display: grid;
+  grid-template-columns: 400px;
+}
 
 .work h1 {
   font-family: 'Playfair', sans-serif;
@@ -121,10 +125,14 @@
 }
 
 .work .project {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: fit-content;
   background: #1a2236;
+  justify-content: flex-start;
   color: #fff;
-  padding: 0%;
+  padding: 0;
 }
 
 .project img {
@@ -133,7 +141,7 @@
 }
 
 .project h3 {
-  margin: 25px 32px 5px 32px;
+  margin: 25px 32px 0 40px;
   font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 26px;
   font-weight: lighter;
@@ -142,17 +150,19 @@
   text-align: left;
 }
 
-.project .tech-stack {
-  display: grid;
-  margin: 25px 32px 5px 32px;
-  grid-template-columns: auto auto auto;
-  column-gap: 20px;
-  row-gap: 15px;
-  color: rgb(54, 52, 52);
+.project .list-tech {
+  list-style: none;
+  margin: 20px 20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-.project .tech-stack span {
-  padding: 5px 10px;
+.project .list-tech li {
+  display: inline;
+  margin-right: 1px;
+  padding: 7px 9px;
   border: 1px solid #000;
   background: #98dede;
   text-align: center;
@@ -160,13 +170,14 @@
 }
 
 .project button {
-  margin: 25px 32px;
+  width: fit-content;
+  margin: 15px 40px;
   font-family: 'Poppins', sans-serif;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0;
-  padding: 15px 25px;
+  padding: 12px 25px;
   border: 1px solid #fff;
   background: #1a2236;
   text-align: left;
@@ -176,42 +187,14 @@
 .project button i {
   margin-left: 10px;
   color: #fff;
-  font-size: 22px;
-}
-
-/* hover-effects */
-.project button:hover {
-  background: #fff;
-  color: #1a2236;
-  border: 2px solid #1a2236;
-}
-
-.project button:active {
-  border: 2px solid #fff;
-}
-
-.project > button:hover i {
-  color: #1a2236;
-}
-
-.primary-button button:hover {
-  border: 1px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
-}
-
-.primary-button button:active {
-  border: 2px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
+  font-size: 18px;
 }
 
 /* About-section */
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 100%;
   width: fit-content;
   padding: 10px;
 }
@@ -226,7 +209,7 @@
 }
 
 .about-us p {
-  width: 380px;
+  width: 340px;
   text-align: justify;
 }
 
@@ -280,4 +263,51 @@
 
 .about-us .skill {
   background: #febf52 url(/images/skill-bg.png) right bottom no-repeat;
+}
+
+/* hover-effects */
+.project button:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.project button:active {
+  border: 2px solid #fff;
+}
+
+.project > button:hover i {
+  color: #1a2236;
+}
+
+.primary-button button:hover {
+  border: 1px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+.primary-button button:active {
+  border: 2px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+.about-us .button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+}
+
+.about-us .button:hover small {
+  color: #1a2236;
+}
+
+.about-us .button:active {
+  border: 2px solid #1a2236;
+}
+
+.about-us .button:hover div {
+  background-color: #fff;
+  color: #1a2236;
+  border-color: #1a2236;
 }
