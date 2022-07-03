@@ -1,7 +1,8 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 .container {
   display: block;
 }
@@ -34,7 +35,6 @@
 .hamburger {
   box-sizing: border-box;
   margin-right: 52px;
-  
 }
 
 .rec {
@@ -124,7 +124,7 @@
 .work h1 {
   font-family: 'Playfair', sans-serif;
   font-size: 50px;
-  margin-bottom:20px ;
+  margin-bottom: 20px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0;
@@ -137,8 +137,6 @@
   background: #1a2236;
   justify-content: flex-start;
   color: #fff;
-
-
 }
 
 .project img {
@@ -152,7 +150,7 @@
   font-size: 26px;
   font-weight: 500;
   line-height: 16px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -161,14 +159,14 @@
   margin: 20px 20px 0 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .project .list-tech li {
   display: inline;
-  margin-right: 10px;
-  padding: 7px 15px;
+  margin-right: 6px;
+  padding: 7px 7px;
   border: 1px solid #000;
   background: #98dede;
   text-align: center;
@@ -210,11 +208,10 @@
   font-weight: 400;
   letter-spacing: 0;
   text-align: left;
-  
 }
 
 .about-us p {
-  margin:15px 0;
+  margin: 15px 0;
   text-align: justify;
 }
 
@@ -250,13 +247,14 @@
 }
 
 .about-us .skills {
-  padding: 42px;
+  padding: 72px 32px;
   margin: 20px 0;
   color: #fff;
 }
-.about-us .skills ul{
+
+.about-us .skills ul {
   padding: 5px;
-  margin: 0 20px ;
+  margin: 0 20px;
 }
 
 .about-us .lang {
