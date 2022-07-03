@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   display: block;
 }
@@ -16,20 +21,20 @@
 #triangleImage {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 0;
   z-index: 1;
 }
 
 #rectangleImage {
   position: absolute;
   top: 0;
-  left: 45px;
+  left: 35px;
   z-index: 2;
 }
 
 .hamburger {
   box-sizing: border-box;
-  margin-right: 32px;
+  margin-right: 52px;
 }
 
 .rec {
@@ -58,7 +63,7 @@
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  margin-top: 100px;
+  margin: 100px 0 45px 0;
 }
 
 #header {
@@ -84,7 +89,7 @@
 }
 
 .primary-button {
-  margin: 32px 0;
+  margin: 32px 30px;
   display: flex;
   background-color: #1a2236;
   justify-content: center;
@@ -105,19 +110,21 @@
   background: #fff url(/images/bg-cover-page.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  width: auto;
+  width: 100%;
   height: 250px;
 }
 
 /* Work-section */
 .work {
   display: grid;
-  grid-template-columns: 360px;
+  grid-template-columns: 1fr;
+  margin: 15px;
 }
 
 .work h1 {
   font-family: 'Playfair', sans-serif;
   font-size: 50px;
+  margin-bottom: 20px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0;
@@ -127,12 +134,9 @@
 .work .project {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: fit-content;
   background: #1a2236;
   justify-content: flex-start;
   color: #fff;
-  padding: 0;
 }
 
 .project img {
@@ -144,26 +148,25 @@
   margin: 25px 10px 0 20px;
   font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 26px;
-  font-weight: lighter;
+  font-weight: 500;
   line-height: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
   text-align: left;
 }
 
 .project .list-tech {
   list-style: none;
   margin: 20px 20px 0 20px;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .project .list-tech li {
   display: inline;
-  margin-right: 2px;
-  padding: 7px 9px;
+  margin-right: 6px;
+  padding: 7px 7px;
   border: 1px solid #000;
   background: #98dede;
   text-align: center;
@@ -195,9 +198,8 @@
 
 .about-us {
   display: grid;
-  grid-template-columns: 360px;
-  width: fit-content;
-  padding: 10px;
+  grid-template-columns: 1fr;
+  padding: 25px;
 }
 
 .about-us h1 {
@@ -206,11 +208,10 @@
   font-weight: 400;
   letter-spacing: 0;
   text-align: left;
-  margin-bottom: 0%;
 }
 
 .about-us p {
-  width: 350px;
+  margin: 15px 0;
   text-align: justify;
 }
 
@@ -246,9 +247,14 @@
 }
 
 .about-us .skills {
-  padding: 32px;
+  padding: 72px 32px;
   margin: 20px 0;
   color: #fff;
+}
+
+.about-us .skills ul {
+  padding: 5px;
+  margin: 0 20px;
 }
 
 .about-us .lang {
