@@ -172,7 +172,6 @@
 }
 
 .project .list-tech li {
-  display: inline;
   float: left;
   font-family: 'Poppins',sans-serif;
   margin-right: 6px;
