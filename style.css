@@ -402,7 +402,7 @@ footer .link_icons {
     background: url(images/Thur.png) no-repeat, url(/images/image_dots.png) no-repeat;
     background-color: #fff;
     background-position: 100% 0, 36vw 99.99%;
-    background-size: 52% 877px, 120px;
+    background-size: 48% 877px, 15%;
     margin-top: 59px;
     margin-bottom: 80px;
     vertical-align: middle;
@@ -410,21 +410,23 @@ footer .link_icons {
   }
 
   .container .main #header {
-    width: 160px;
-    margin: 60px 68px;
+    width: 46%;
+    margin-top: 10%;
+    margin-left: 10%;
     padding: 0;
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 105px;
     line-height: 100%;
     color: #1a2236;
   }
 
   .container .main #discription {
-    width: 300px;
+    width: 350px;
     margin: 0 68px;
     padding: 0;
+    margin-left: 10%;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -435,6 +437,7 @@ footer .link_icons {
   .container .primary-button {
     width: fit-content;
     margin: 42px 68px;
+    margin-left:10%;
   }
 
   .container .footer {
