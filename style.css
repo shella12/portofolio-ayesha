@@ -461,8 +461,8 @@ footer .link_icons {
       url(/images/image-geometry_3.png),
       url(/images/image-geometry_4.png),
       url(/images/image-geometry_5.png);
-    background-position: 24% 0, 35% 58.7%, 55% 52%, 99% 86%, 48% 89%, 0 89.5%;
-    background-size: 10%, 7% 6%, 25% 19%, 48% 16.9%, 6.5%, 13%;
+    background-position: 24% 0, 35% 58.7%, 55% 52%, 100% 83%, 48% 89%, 0 89.5%;
+    background-size: 10%, 7% 6%, 25% 19%, 49% 15%, 6.5%, 13%;
     background-repeat: no-repeat;
   }
 
@@ -490,7 +490,6 @@ footer .link_icons {
   }
 
   .work .p3 {
-    margin-top: 20px;
     width: 75%;
     margin-left: 25%;
     grid-column: 5/8;
@@ -537,23 +536,22 @@ footer .link_icons {
 
   .p3 h3 {
     padding: 0;
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .p3 .list-tech {
     padding: 0;
-    margin-top: 1px;
-    margin-right: 3px;
-    font-size: 8px;
+    margin-top: 3px;
+    font-size: 10px;
   }
 
   .p3 .list-tech li {
-    padding: 2px;
-    margin-right: 2px;
+    padding: 5px;
+    margin-right: 3px;
   }
 
   .p3 button {
-    margin-top: 4px;
+    margin-top: 6px;
     font-size: 11px;
     padding: 1px 7px;
   }
