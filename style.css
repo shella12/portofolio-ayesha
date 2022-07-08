@@ -402,12 +402,12 @@ footer .link_icons {
   .container .desk-nav ul {
     margin: 22px;
   }
+
   .container .desk-nav ul li a{
     background: transparent;
     padding:5px 6px ;
     transition: background-color .5s ease-out, color .5s ease-out;
   }
-
   .container .main {
     background: url(images/Thur.png) no-repeat, url(/images/image_dots.png) no-repeat;
     background-color: #fff;
