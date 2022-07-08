@@ -7,6 +7,11 @@
   -webkit-box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   display: block;
   background: url(/images/ShapeTriangle.png) 0 0 no-repeat, url(/images/Shape.png) 35px 0 no-repeat;
@@ -56,6 +61,10 @@
   margin: 100px 0 45px 0;
 }
 
+.header-title {
+  width: fit-content;
+}
+
 #header {
   font-family: Playfair, 'Playfair Display', Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   font-size: 50px;
@@ -64,7 +73,13 @@
   letter-spacing: 0;
   text-align: left;
   margin: 4px 32px;
+  padding: 0.2rem 0;
   color: #1a2236;
+  overflow: hidden;
+  width: fit-content;
+  animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
+  border-right: 3px solid;
+  white-space: nowrap;
 }
 
 #discription {
@@ -80,6 +95,8 @@
 
 .primary-button {
   margin: 32px 30px;
+
+  /* border: none; */
   display: flex;
   background-color: #1a2236;
   justify-content: center;
@@ -89,10 +106,12 @@
   flex: 1;
   background-color: #1a2236;
   padding: 12px 42px;
+  border: 1px solid #1a2236;
   font-family: 'Poppins', sans-serif;
   color: white;
   font-size: 26px;
   text-align: center;
+  transition: all 0.3s ease-out;
 }
 
 .footer {
@@ -174,6 +193,7 @@
   background: #1a2236;
   text-align: left;
   color: #fff;
+  transition: all 0.3s ease-out;
 }
 
 .project button i {
@@ -214,6 +234,7 @@
   color: #fff;
   padding: 16px;
   outline: none;
+  transition: all 0.3s ease-out;
 }
 
 .about-us .skills {
@@ -345,6 +366,7 @@
   text-align: center;
   padding: 12px 42px;
   margin: 25px 0;
+  transition: all 0.3s ease-out;
 }
 
 footer {
@@ -367,6 +389,33 @@ footer .link_icons {
   display: flex;
   justify-content: space-between;
 }
+
+/* Keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+/* @keyframes typing {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
 
 /* desktop-version */
 
@@ -420,6 +469,8 @@ footer .link_icons {
     font-size: 105px;
     line-height: 100%;
     color: #1a2236;
+
+    /* white-space: wrap; */
   }
 
   .container .main #discription {
@@ -461,8 +512,8 @@ footer .link_icons {
       url(/images/image-geometry_3.png),
       url(/images/image-geometry_4.png),
       url(/images/image-geometry_5.png);
-    background-position: 24% 0, 35% 58.7%, 55% 52%, 99% 86%, 48% 89%, 0 89.5%;
-    background-size: 10%, 7% 6%, 25% 19%, 48% 16.9%, 6.5%, 13%;
+    background-position: 24% 0, 35% 58.7%, 55% 52%, 100% 83%, 48% 89%, 0 89.5%;
+    background-size: 10%, 7% 6%, 25% 19%, 49% 15%, 6.5%, 13%;
     background-repeat: no-repeat;
   }
 
@@ -490,7 +541,6 @@ footer .link_icons {
   }
 
   .work .p3 {
-    margin-top: 20px;
     width: 75%;
     margin-left: 25%;
     grid-column: 5/8;
@@ -537,23 +587,22 @@ footer .link_icons {
 
   .p3 h3 {
     padding: 0;
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .p3 .list-tech {
     padding: 0;
-    margin-top: 1px;
-    margin-right: 3px;
-    font-size: 8px;
+    margin-top: 3px;
+    font-size: 10px;
   }
 
   .p3 .list-tech li {
-    padding: 2px;
-    margin-right: 2px;
+    padding: 5px;
+    margin-right: 3px;
   }
 
   .p3 button {
-    margin-top: 4px;
+    margin-top: 6px;
     font-size: 11px;
     padding: 1px 7px;
   }
@@ -751,6 +800,12 @@ footer .link_icons {
     color: #1a2236;
   }
 
+  .container .desk-nav ul li a {
+    background: transparent;
+    padding: 5px 6px;
+    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+  }
+
   /* hover-effects-desktop */
 
   .contact-form fieldset input:focus {
@@ -760,42 +815,61 @@ footer .link_icons {
   .contact-form textarea:focus {
     outline: 1px solid #000;
   }
+}
 
-  /* hover-effects */
+/* hover-effects */
 
-  .project button:hover {
-    background: #fff;
-    color: #1a2236;
-    border: 2px solid #1a2236;
-  }
+.project button:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
 
-  .project button:active {
-    border: 2px solid #fff;
-  }
+.project button:active {
+  border-color: #fff;
+  outline: 1px solid #fff;
+}
 
-  .project > button:hover i {
-    color: #1a2236;
-  }
+.project > button:hover i {
+  color: #1a2236;
+}
 
-  .primary-button button:hover {
-    border: 1px solid #1a2236;
-    background-color: white;
-    color: #1a2236;
-  }
+.primary-button button:hover {
+  background-color: white;
+  color: #1a2236;
+}
 
-  .primary-button button:active {
-    border: 2px solid #1a2236;
-    padding: 11px 42px;
-  }
+.primary-button button:active {
+  border: 2px solid #1a2236;
+  padding: 11px 42px;
+}
 
-  .about-us button:hover {
-    background: #fff url(/images/ic_download_hover.png) 68% 40% no-repeat;
-    background-size: 32px;
-    border: 1px solid #1a2236;
-    color: #1a2236;
-  }
+.about-us button:hover {
+  background: #fff url(/images/ic_download_hover.png) 68% 40% no-repeat;
+  background-size: 32px;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+}
 
-  .about-us button:active {
-    border: 2px solid #1a2236;
-  }
+.about-us button:active {
+  outline: 1px solid #1a2236;
+}
+
+.desk-nav ul li a:hover,
+.desk-nav ul li a:focus {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.contact-btn:hover {
+  outline: none;
+  border: 1px solid  #1a2236;
+  background-color: white;
+  padding: 13px 42px;
+  color: #1a2236;
+}
+
+.contact-btn:active {
+  padding: 12px 42px;
+  border: 2px solid #1a2236;
 }
