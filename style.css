@@ -7,7 +7,7 @@
   -webkit-box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -73,12 +73,11 @@ a{
   letter-spacing: 0;
   text-align: left;
   margin: 4px 32px;
-  padding: 0.2rem 0rem;
+  padding: 0.2rem 0;
   color: #1a2236;
-  width: 0px;
   overflow: hidden;
   width: fit-content;
-  animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
   border-right: 3px solid;
   white-space: nowrap;
 }
@@ -96,11 +95,13 @@ a{
 
 .primary-button {
   margin: 32px 30px;
+
   /* border: none; */
   display: flex;
   background-color: #1a2236;
   justify-content: center;
 }
+
 .primary-button button {
   flex: 1;
   background-color: #1a2236;
@@ -110,7 +111,7 @@ a{
   color: white;
   font-size: 26px;
   text-align: center;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .footer {
@@ -192,7 +193,7 @@ a{
   background: #1a2236;
   text-align: left;
   color: #fff;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .project button i {
@@ -233,7 +234,7 @@ a{
   color: #fff;
   padding: 16px;
   outline: none;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .about-us .skills {
@@ -365,7 +366,7 @@ a{
   text-align: center;
   padding: 12px 42px;
   margin: 25px 0;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 footer {
@@ -394,10 +395,12 @@ footer .link_icons {
   from {
     width: 0;
   }
+
   to {
     width: 80%;
   }
 }
+
 /* @keyframes typing {
   from {
     width: 10%;
@@ -444,11 +447,6 @@ footer .link_icons {
     margin: 22px;
   }
 
-  .container .desk-nav ul li a{
-    background: transparent;
-    padding:5px 6px ;
-    transition: background-color .5s ease-out, color .5s ease-out;
-  }
   .container .main {
     background: url(images/Thur.png) no-repeat, url(/images/image_dots.png) no-repeat;
     background-color: #fff;
@@ -471,6 +469,7 @@ footer .link_icons {
     font-size: 105px;
     line-height: 100%;
     color: #1a2236;
+
     /* white-space: wrap; */
   }
 
@@ -801,6 +800,12 @@ footer .link_icons {
     color: #1a2236;
   }
 
+  .container .desk-nav ul li a {
+    background: transparent;
+    padding: 5px 6px;
+    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+  }
+
   /* hover-effects-desktop */
 
   .contact-form fieldset input:focus {
@@ -810,60 +815,61 @@ footer .link_icons {
   .contact-form textarea:focus {
     outline: 1px solid #000;
   }
-  
 }
-  /* hover-effects */
 
-  .project button:hover {
-    background: #fff;
-    color: #1a2236;
-    border: 1px solid #1a2236;
-  }
-  .project button:active {
-    border-color:#fff;
-    outline: 1px solid #fff;
-  }
+/* hover-effects */
 
-  .project > button:hover i {
-    color: #1a2236;
-  }
-
-  .primary-button button:hover {
-   
-    background-color: white;
-    color: #1a2236;
-  }
-
-  .primary-button button:active {
-    border: 2px solid #1a2236;
-    padding: 11px 42px;
-  }
-
-  .about-us button:hover {
-    background: #fff url(/images/ic_download_hover.png) 68% 40% no-repeat;
-    background-size: 32px;
-    border: 1px solid #1a2236;
-    color: #1a2236;
-  }
-
-  .about-us button:active {
-    
-    outline: 1px solid #1a2236;
-  }
-  .desk-nav ul li a:hover,
-  .desk-nav ul li a:focus{
-    background-color: #1a2236;
-    color: #fff;
+.project button:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
 }
-.contact-btn:hover{
+
+.project button:active {
+  border-color: #fff;
+  outline: 1px solid #fff;
+}
+
+.project > button:hover i {
+  color: #1a2236;
+}
+
+.primary-button button:hover {
+  background-color: white;
+  color: #1a2236;
+}
+
+.primary-button button:active {
+  border: 2px solid #1a2236;
+  padding: 11px 42px;
+}
+
+.about-us button:hover {
+  background: #fff url(/images/ic_download_hover.png) 68% 40% no-repeat;
+  background-size: 32px;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+}
+
+.about-us button:active {
+  outline: 1px solid #1a2236;
+}
+
+.desk-nav ul li a:hover,
+.desk-nav ul li a:focus {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.contact-btn:hover {
   outline: none;
   border: 1px solid  #1a2236;
   background-color: white;
   padding: 13px 42px;
   color: #1a2236;
 }
-.contact-btn:active{
+
+.contact-btn:active {
   padding: 12px 42px;
   border: 2px solid #1a2236;
 }
-
