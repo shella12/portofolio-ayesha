@@ -7,6 +7,11 @@
   -webkit-box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   display: block;
   background: url(/images/ShapeTriangle.png) 0 0 no-repeat, url(/images/Shape.png) 35px 0 no-repeat;
@@ -397,6 +402,11 @@ footer .link_icons {
   .container .desk-nav ul {
     margin: 22px;
   }
+  .container .desk-nav ul li a{
+    background: transparent;
+    padding:5px 6px ;
+    transition: background-color .5s ease-out, color .5s ease-out;
+  }
 
   .container .main {
     background: url(images/Thur.png) no-repeat, url(/images/image_dots.png) no-repeat;
@@ -758,7 +768,7 @@ footer .link_icons {
   .contact-form textarea:focus {
     outline: 1px solid #000;
   }
-
+}
   /* hover-effects */
 
   .project button:hover {
@@ -796,4 +806,8 @@ footer .link_icons {
   .about-us button:active {
     border: 2px solid #1a2236;
   }
+  .desk-nav ul li a:hover,
+  .desk-nav ul li a:focus{
+    background-color: #1a2236;
+    color: #fff;
 }
