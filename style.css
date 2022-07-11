@@ -720,7 +720,8 @@ footer .link_icons {
   .contact-form .form-content {
     width: 57%;
   }
-  form{
+
+  form {
     display: flex;
     flex-direction: column;
   }
