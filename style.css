@@ -14,7 +14,7 @@ a {
 
 .container {
   display: block;
-  background: url(/images/ShapeTriangle.png) 0 0 no-repeat, url(/images/Shape.png) 35px 0 no-repeat;
+  background: url(images/ShapeTriangle.png) 0 0 no-repeat, url(images/Shape.png) 35px 0 no-repeat;
   background-color: #fff;
 }
 
@@ -140,7 +140,7 @@ a {
 
 .footer {
   margin-top: 42px;
-  background: #fff url(/images/image-geometry_1.svg) no-repeat;
+  background: #fff url(images/image-geometry_1.svg) no-repeat;
   background-size:cover;
   background-position: 0 0;
   width: 100%;
@@ -249,7 +249,7 @@ a {
 
 .about-us button {
   width: 100%;
-  background: #1a2236 url(/images/ic_download.png) 68% 46% no-repeat;
+  background: #1a2236 url(images/ic_download.png) 68% 46% no-repeat;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -273,18 +273,18 @@ a {
 }
 
 .about-us .lang {
-  background: #1c528a url(/images/lang-bg.png) right bottom no-repeat;
+  background: #1c528a url(images/ic_languages.svg) right bottom no-repeat;
 }
 
 .about-us .framework {
   background-color: #e2505c;
-  background-image: url(/images/ic_framework.png);
+  background-image: url(images/ic_framework.svg);
   background-repeat: no-repeat;
   background-position: right bottom, right bottom;
 }
 
 .about-us .skill {
-  background: #febf52 url(/images/ic_skills.png) right bottom no-repeat;
+  background: #febf52 url(images/ic_skills.svg) right bottom no-repeat;
 }
 
 /* contact-form */
@@ -295,7 +295,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url(/images/ShapeTriangle.png) 0 0 no-repeat, url(/images/Shape.png) 35px 0 no-repeat;
+  background: url(images/ShapeTriangle.png) 0 0 no-repeat, url(images/Shape.png) 35px 0 no-repeat;
   background-color: #f9f9fa;
 }
 
@@ -466,7 +466,7 @@ footer .link_icons {
   }
 
   .container .main {
-    background: url(images/Thur.png) no-repeat, url(/images/image_dots.png) no-repeat;
+    background: url(images/Thur.png) no-repeat, url(images/image_dots.png) no-repeat;
     background-color: #fff;
     background-position: 100% 0, 36vw 99.99%;
     background-size: 48% 877px, 15%;
@@ -524,12 +524,12 @@ footer .link_icons {
     align-content: center;
     justify-items: center;
     background:
-      url(/images/image_dots.png),
-      url(/images/Group_84.png),
-      url(/images/image-geometry_2.png),
-      url(/images/image-geometry_3.png),
-      url(/images/image-geometry_4.png),
-      url(/images/image-geometry_5.png);
+      url(images/image_dots.png),
+      url(images/Group_84.png),
+      url(images/image-geometry_2.png),
+      url(images/image-geometry_3.png),
+      url(images/image-geometry_4.png),
+      url(images/image-geometry_5.png);
     background-position: 24% 0, 35% 58.7%, 55% 52%, 100% 83%, 48% 89%, 0 89.5%;
     background-size: 10%, 7% 6%, 25% 19%, 49% 15%, 6.5%, 13%;
     background-repeat: no-repeat;
@@ -667,7 +667,7 @@ footer .link_icons {
 
   .about-us button {
     width: fit-content;
-    background: #1a2236 url(/images/ic_download.png) 68% 45% no-repeat;
+    background: #1a2236 url(images/ic_download.png) 68% 45% no-repeat;
     background-size: 22px;
     font-size: 20px;
     font-weight: 400;
@@ -679,7 +679,7 @@ footer .link_icons {
 
   .about-us .skill-box {
     width: fit-content;
-    background: #fff url(/images/image_dots_with_teal.png) bottom right no-repeat;
+    background: #fff url(images/image_dots_with_teal.png) bottom right no-repeat;
     background-size: 172px;
     grid-row: 1/2;
     display: grid;
@@ -712,7 +712,7 @@ footer .link_icons {
   .contact-form {
     align-items: center;
     padding-bottom: 150px;
-    background: url(/images/image-geometry_6.png) top left no-repeat, url(/images/image-geometry_7.png) bottom right  no-repeat;
+    background: url(images/image-geometry_6.png) top left no-repeat, url(images/image-geometry_7.png) bottom right  no-repeat;
     background-size: 150px, 260px;
     background-color: #f9f9fa;
   }
@@ -878,7 +878,7 @@ footer .link_icons {
 }
 
 .about-us button:hover {
-  background: #fff url(/images/ic_download_hover.png) 68% 40% no-repeat;
+  background: #fff url(images/ic_download_hover.png) 68% 40% no-repeat;
   background-size: 32px;
   border: 1px solid #1a2236;
   color: #1a2236;
