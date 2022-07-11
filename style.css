@@ -720,6 +720,10 @@ footer .link_icons {
   .contact-form .form-content {
     width: 57%;
   }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
 
   .contact-form h1 {
     font-size: 70px;
@@ -767,9 +771,8 @@ footer .link_icons {
 
   .contact-form button {
     width: fit-content;
-    margin-left: 26%;
-    margin-right: 24%;
-    font-size: 16px;
+    align-self: center;
+    font-size: 20px;
     letter-spacing: -0.05rem;
   }
 
