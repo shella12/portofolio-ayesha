@@ -140,11 +140,11 @@ a {
 
 .footer {
   margin-top: 42px;
-  background: #fff url(/images/bg-cover-page.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: #fff url(/images/image-geometry_1.svg) no-repeat;
+  background-size:cover;
+  background-position: 0 0;
   width: 100%;
-  height: 250px;
+  height: 240px;
 }
 
 /* Work-section */
