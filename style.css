@@ -141,7 +141,7 @@ a {
 .footer {
   margin-top: 42px;
   background: #fff url(images/image-geometry_1.svg) no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: 0 0;
   width: 100%;
   height: 240px;
