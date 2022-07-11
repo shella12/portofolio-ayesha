@@ -60,25 +60,28 @@ a {
   align-content: space-between;
   margin: 100px 0 45px 0;
 }
-.header-title{
+
+.header-title {
   margin: 4px 32px;
 }
-.header-title h1{
+
+.header-title h1 {
   width: fit-content;
   display: none;
 }
-.header-title-mob h1{
+
+.header-title-mob h1 {
   width: fit-content;
-  margin-left:32px ;
+  margin-left: 32px;
 }
 
-#header {
+.header {
   font-family: Playfair, 'Playfair Display', Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0;
-  text-align: left;  
+  text-align: left;
   padding: 0.2rem 0;
   color: #1a2236;
   overflow: hidden;
@@ -86,13 +89,14 @@ a {
   animation: typing 1s steps(22);
   white-space: nowrap;
 }
-#header2{
+
+#header2 {
   font-family: Playfair, 'Playfair Display', Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0;
-  text-align: left;  
+  text-align: left;
   padding: 0.2rem 0;
   color: #1a2236;
   overflow: hidden;
@@ -101,6 +105,7 @@ a {
   animation-delay: 1s;
   white-space: nowrap;
 }
+
 #discription {
   margin: 15px 32px;
   color: #1a2236;
@@ -419,11 +424,12 @@ footer .link_icons {
     width: 80%;
   }
 }
+
 @keyframes blink {
   50% {
     border-color: transparent;
   }
-} 
+}
 
 /* desktop-version */
 
@@ -446,7 +452,8 @@ footer .link_icons {
   .container .desk-nav {
     display: block;
   }
-  .header-title-mob{
+
+  .header-title-mob {
     display: none;
   }
 
@@ -468,18 +475,20 @@ footer .link_icons {
     vertical-align: middle;
     padding-bottom: 200px;
   }
-  .container .main .header-title{
+
+  .container .main .header-title {
     margin-top: 10%;
-    margin-left: 10%;  
-    }
-  .container .main #header,.container .main #header2 {
+    margin-left: 10%;
+  }
+
+  .container .main .header,
+  .container .main #header2 {
     display: block;
     padding: 0;
     padding-bottom: 9px;
     font-size: 105px;
     line-height: 100%;
     color: #1a2236;
-    white-space: wrap;
   }
 
   .container .main #discription {
@@ -824,11 +833,12 @@ footer .link_icons {
   .contact-form textarea:focus {
     outline: 1px solid #000;
   }
+
   /* @keyframes typing {
     from {
       width: 0%;
     }
-  
+
     to {
       width: 38%;
     }
