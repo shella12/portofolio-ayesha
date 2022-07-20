@@ -1,4 +1,3 @@
-
 const hamburger = document.querySelector('.hamburger');
 const navbarMenu = document.querySelector('.mob-nav-ul');
 
@@ -18,3 +17,4 @@ window.addEventListener('resize', () => {
     navbarMenu.classList.add('mob-nav-ul');
     hamburger.classList.remove('active');
   }
+});
