@@ -6,6 +6,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +17,7 @@ a {
 }
 
 .container {
-  display: block;
+  position: relative;
   background: url(images/ShapeTriangle.png) 0 0 no-repeat, url(images/Shape.png) 35px 0 no-repeat;
   background-color: #fff;
 }
@@ -31,8 +32,11 @@ a {
 }
 
 .mob-nav .hamburger {
-  box-sizing: border-box;
-  margin-right: 52px;
+  padding: 40px;
+}
+
+.mob-nav-ul {
+  display: none;
 }
 
 .mob-nav .rec {
@@ -54,6 +58,45 @@ a {
 .mob-nav .rectangle3 {
   top: 49px;
 }
+
+.click {
+  position: absolute;
+  background: url(images/Group_84.png), url(images/Group_84.png), url(images/Group_98.png);
+  background-position: 80% 10%, 20% 90%, 0 0;
+  background-size: 52px, 52px, 110px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 42rem;
+  right: 0;
+  top: 0;
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+  list-style: none;
+  transition: all 3s ease-out;
+}
+
+.active .rectangle1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.active .rectangle2 {
+  display: none;
+}
+
+.active .rectangle3 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.active {
+  z-index: 20;
+}
+
 
 /* main-css */
 
@@ -264,13 +307,14 @@ a {
   transition: all 0.3s ease-out;
 }
 
-.about-us .skills h3{
+.about-us .skills h3 {
   font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2rem;
-    line-height: 50px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 50px;
 }
+
 .about-us .skills {
   padding: 72px 32px;
   margin: 20px 0;
@@ -455,7 +499,7 @@ footer .link_icons {
     height: 50px;
     top: 0;
     left: 0;
-    z-index: 200;
+    z-index: 20;
     justify-content: center;
   }
 
