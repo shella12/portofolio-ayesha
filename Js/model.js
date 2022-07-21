@@ -1,0 +1,88 @@
+const projectBtn = document.querySelectorAll('.projectBtn');
+const body = document.querySelector('body');
+const imagesSrc = ['./images/project1.png', './images/project5.png', './images/project2.png', './images/project4.png', './images/project3.png', './images/project6.png'];
+const techTags = ['HTML/CSS', 'Ruby on Rails', 'JavaScript'];
+const work = document.querySelector('.work');
+projectBtn.forEach((element, index) => {
+  /* eslint-disable no-unused-vars */
+  element.addEventListener('click', (event) => {
+    body.classList.add('active');
+
+    const container = document.createElement('div');
+    container.className = 'container-base';
+    work.prepend(container);
+
+    const pop = document.createElement('div');
+    pop.className = 'container-popup';
+    container.appendChild(pop);
+
+    const popClose = document.createElement('button');
+    popClose.className = 'popup-close';
+    popClose.innerText = 'X';
+    /* eslint-disable no-unused-vars */
+    popClose.addEventListener('click', ((event) => {
+      body.classList.remove('active');
+      container.remove();
+    }));
+    pop.appendChild(popClose);
+
+    const popTitle = document.createElement('h2');
+    popTitle.innerHTML = 'Project name goes here';
+    popTitle.className = 'pop-title';
+    pop.appendChild(popTitle);
+
+    const popTechList = document.createElement('ul');
+    popTechList.className = 'pop-tech-list';
+    pop.appendChild(popTechList);
+
+    // loop
+
+    techTags.forEach((element) => {
+      const popTechListContent = document.createElement('li');
+      popTechListContent.innerHTML = element;
+      popTechList.appendChild(popTechListContent);
+    });
+
+    const popImage = document.createElement('img');
+    popImage.src = imagesSrc[index];
+    popImage.className = 'pop-img';
+    pop.appendChild(popImage);
+
+    const popImageContainer = document.createElement('div');
+    popImageContainer.className = 'pop-image-container';
+    pop.appendChild(popImageContainer);
+
+    /* eslint-disable no-plusplus */
+    for (let i = 0; i < 4; i++) {
+      const image = document.createElement('img');
+      image.classList = 'pop-img-loop';
+      image.src = popImage.src;
+      popImageContainer.appendChild(image);
+    }
+
+    const popDescription = document.createElement('p');
+    popDescription.className = 'pop-description';
+    popDescription.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
+    pop.appendChild(popDescription);
+
+    const popBtnLive = document.createElement('a');
+    popBtnLive.className = 'pop-btn';
+    popBtnLive.innerText = 'See Live';
+    pop.appendChild(popBtnLive);
+
+    const popBtnLiveImage = document.createElement('img');
+    popBtnLiveImage.src = './images/live-link.png';
+    popBtnLiveImage.className = 'pop-a-img';
+    popBtnLive.appendChild(popBtnLiveImage);
+
+    const popBtnSource = document.createElement('a');
+    popBtnSource.className = 'pop-btn';
+    popBtnSource.innerText = 'See Source';
+    pop.appendChild(popBtnSource);
+
+    const popBtnSrcImage = document.createElement('img');
+    popBtnSrcImage.src = './images/src-link.png';
+    popBtnSrcImage.className = 'pop-a-img';
+    popBtnSource.appendChild(popBtnSrcImage);
+  });
+});
