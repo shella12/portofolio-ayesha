@@ -1,17 +1,17 @@
-function getData () {
-  const contactData  = JSON.parse(localStorage.getItem('contactData'));
+function getData() {
+  const contactData = JSON.parse(localStorage.getItem('contactData'));
   contactData.name = document.querySelector('#name').value;
   contactData.email = document.querySelector('#email').value;
   contactData.message = document.querySelector('#message').value;
   localStorage.setItem('contactData', JSON.stringify(contactData));
 }
 
-function checkData(){
+function checkData() {
   if (!localStorage.getItem('contactData')) {
     const contactData = {
-      name : '',
-      email : '',
-      message : '',
+      name: '',
+      email: '',
+      message: '',
     };
     localStorage.setItem('contactData', JSON.stringify(contactData));
   } else {
@@ -24,8 +24,8 @@ function checkData(){
 
 window.onload = () => {
   checkData();
-}
+};
 
-document.querySelector('#name').addEventListener('keydown', getData)
-document.querySelector('#email').addEventListener('keydown', getData)
-document.querySelector('#message').addEventListener('keydown', getData)
+document.querySelector('#name').addEventListener('keydown', getData);
+document.querySelector('#email').addEventListener('keydown', getData);
+document.querySelector('#message').addEventListener('keydown', getData);

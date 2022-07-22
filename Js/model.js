@@ -1,4 +1,5 @@
 const projectBtn = document.querySelectorAll('.projectBtn');
+const imageArray = [];
 const body = document.querySelector('body');
 const imagesSrc = ['./images/project1.png', './images/project5.png', './images/project2.png', './images/project4.png', './images/project3.png', './images/project6.png'];
 const techTags = ['HTML/CSS', 'Ruby on Rails', 'JavaScript'];
@@ -53,6 +54,7 @@ projectBtn.forEach((element, index) => {
     /* eslint-disable no-plusplus */
     for (let i = 0; i < 4; i++) {
       const image = document.createElement('img');
+      imageArray.push(image);
       image.classList = 'pop-img-loop';
       image.src = popImage.src;
       popImageContainer.appendChild(image);
@@ -102,17 +104,25 @@ projectBtn.forEach((element, index) => {
     popLinkDiv.appendChild(popNextLink);
 
     popPrevLink.addEventListener('click', (event) => {
-      if (index = 0) {
+      if (index === 0) {
         index = 5;
-      }
-      index -= 1;
+      } else index -= 1;
+      popImage.src = imagesSrc[index];
+      imageArray[0].src = imagesSrc[index];
+      imageArray[1].src = imagesSrc[index];
+      imageArray[2].src = imagesSrc[index];
+      imageArray[3].src = imagesSrc[index];
     });
 
     popNextLink.addEventListener('click', (event) => {
-      if (index = 5) {
+      if (index === 5) {
         index = 0;
-      }
-      index += 1 ;
+      } else index += 1;
+      popImage.src = imagesSrc[index];
+      imageArray[0].src = imagesSrc[index];
+      imageArray[1].src = imagesSrc[index];
+      imageArray[2].src = imagesSrc[index];
+      imageArray[3].src = imagesSrc[index];
     });
   });
 });
