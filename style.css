@@ -518,9 +518,9 @@ body.active {
   overflow-y: scroll;
   position: fixed;
   background-color: #fff;
-  width: 93vw;
+  width: fit-content;
   height: 100vh;
-  top: 1px;
+  top: 0;
   left: 0;
   margin: 15px;
   padding: 20px 15px;
@@ -583,6 +583,11 @@ p.pop-description {
   line-height: 27px;
 }
 
+.pop-btn-div {
+  display: flex;
+  flex-direction: column;
+}
+
 a.pop-btn {
   padding: 20px 20px;
   margin: 10px 20px 30px 20px;
@@ -594,10 +599,37 @@ a.pop-btn {
   line-height: 27px;
   text-align: center;
   color: #1a2236;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 37%;
+}
+
+a.pop-btn.pop-btn-live {
+  background: url(images/live-link.png) no-repeat;
+  background-position: 95% 50%;
+}
+
+a.pop-btn.pop-btn-src {
+  background: url(images/src-link.png) no-repeat;
+  background-position: 95% 50%;
+}
+
+.pop-link-div {
+  display: none;
+}
+
+span.alert {
+  visibility: hidden;
+  align-self: center;
+  font-size: 16px;
+  color: #1a2236;
+  background-color: transparent;
+  backdrop-filter: blur(24px);
+  margin: 30px 0;
+  padding: 10px;
+  border: 1px solid #1a2236;
+  border-radius: 10px;
+}
+
+span.alert.active {
+  visibility: visible;
 }
 
 .pop-link-div {
@@ -1049,7 +1081,7 @@ span.alert.active {
 
   .container-popup {
     background-color: #fff;
-    width: 95vw;
+    width: 94vw;
     height: 99vh;
     left: 20px;
 
@@ -1101,21 +1133,21 @@ span.alert.active {
   }
 
   div.pop-btn-div {
-    display: flex;
+    flex-direction: row;
     margin-left: 18%;
     align-items: center;
     justify-content: flex-start;
-    width: 55%;
+    width: 60%;
   }
 
   a.pop-btn {
     padding: 10px 30px;
     margin: 10px 20px 30px 20px;
-    font-size: 0.8rem;
-    line-height: 27px;
-    align-items: center;
+    text-align: start;
+    font-size: 0.9rem;
+    font-weight: 400;
     flex: 1;
-    justify-content: space-between;
+    cursor: pointer;
   }
 
   .pop-link-div {
@@ -1127,11 +1159,19 @@ span.alert.active {
   }
 
   .pop-prev-link {
-    background: url(/images/ic_arrow_left.png);
+    background: url(/images/ic_arrow_left.png) no-repeat;
+    background-position: center left;
+    background-size: 18px;
+    padding: 9px 30px;
+    cursor: pointer;
   }
 
   .pop-next-link {
-    background: url(/images/ic_arrow_right.png);
+    background: url(/images/ic_arrow_right.png) no-repeat;
+    background-position: center right;
+    background-size: 18px;
+    padding: 9px 30px;
+    cursor: pointer;
   }
 
   /* hover-effects-desktop */
@@ -1143,7 +1183,13 @@ span.alert.active {
   .contact-form textarea:focus {
     outline: 1px solid #000;
   }
-}
+  .pop-prev-link:hover {
+    text-decoration: underline;
+  }
+
+  .pop-next-link:hover {
+    text-decoration: underline;
+  }
 
 /* hover-effects */
 
@@ -1199,6 +1245,35 @@ span.alert.active {
 
 .contact-btn:active {
   padding: 12px 42px;
+  border: 2px solid #1a2236;
+}
+
+a.pop-btn:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+a.pop-btn.pop-btn-live:hover {
+  background-image: url(images/Union.png);
+}
+
+a.pop-btn.pop-btn-live:active {
+  padding: 9px 29px;
+  background-color: #fff;
+  background-image: url(images/live-link.png);
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+a.pop-btn.pop-btn-src:hover {
+  background-image: url(images/ic_github_white.png);
+}
+
+a.pop-btn.pop-btn-src:active {
+  padding: 9px 29px;
+  background-color: #fff;
+  background-image: url(images/src-link.png);
+  color: #1a2236;
   border: 2px solid #1a2236;
 }
 
