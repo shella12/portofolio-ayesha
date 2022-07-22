@@ -35,8 +35,6 @@ projectBtn.forEach((element, index) => {
     popTechList.className = 'pop-tech-list';
     pop.appendChild(popTechList);
 
-    // loop
-
     techTags.forEach((element) => {
       const popTechListContent = document.createElement('li');
       popTechListContent.innerHTML = element;
@@ -65,10 +63,14 @@ projectBtn.forEach((element, index) => {
     popDescription.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br><br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
     pop.appendChild(popDescription);
 
+    const popBtnLiveDiv = document.createElement('div');
+    popBtnLiveDiv.className = 'pop-btn-div';
+    pop.appendChild(popBtnLiveDiv);
+
     const popBtnLive = document.createElement('a');
     popBtnLive.className = 'pop-btn';
     popBtnLive.innerText = 'See Live';
-    pop.appendChild(popBtnLive);
+    popBtnLiveDiv.appendChild(popBtnLive);
 
     const popBtnLiveImage = document.createElement('img');
     popBtnLiveImage.src = './images/live-link.png';
@@ -78,11 +80,25 @@ projectBtn.forEach((element, index) => {
     const popBtnSource = document.createElement('a');
     popBtnSource.className = 'pop-btn';
     popBtnSource.innerText = 'See Source';
-    pop.appendChild(popBtnSource);
+    popBtnLiveDiv.appendChild(popBtnSource);
 
     const popBtnSrcImage = document.createElement('img');
     popBtnSrcImage.src = './images/src-link.png';
     popBtnSrcImage.className = 'pop-a-img';
     popBtnSource.appendChild(popBtnSrcImage);
+
+    const popLinkDiv = document.createElement('div');
+    popLinkDiv.className = 'pop-link-div';
+    pop.appendChild(popLinkDiv);
+
+    const popPrevLink = document.createElement('a');
+    popPrevLink.className = 'pop-prev-link';
+    popPrevLink.innerText = 'Previous Project';
+    popLinkDiv.appendChild(popPrevLink);
+
+    const popNextLink = document.createElement('a');
+    popNextLink.className = 'pop-next-link';
+    popNextLink.innerText = 'Next Project';
+    popLinkDiv.appendChild(popNextLink);
   });
 });
