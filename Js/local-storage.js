@@ -1,24 +1,24 @@
 function getData () {
-  const formData  = JSON.parse(localStorage.getItem('formData'));
-  formData.name = document.querySelector('#name').value;
-  formData.email = document.querySelector('#email').value;
-  formData.message = document.querySelector('#message').value;
-  localStorage.setItem('formData', JSON.stringify(formData));
+  const contactData  = JSON.parse(localStorage.getItem('contactData'));
+  contactData.name = document.querySelector('#name').value;
+  contactData.email = document.querySelector('#email').value;
+  contactData.message = document.querySelector('#message').value;
+  localStorage.setItem('contactData', JSON.stringify(contactData));
 }
 
 function checkData(){
-  if (!localStorage.getItem('formData')) {
-    const formData = {
+  if (!localStorage.getItem('contactData')) {
+    const contactData = {
       name : '',
       email : '',
       message : '',
     };
-    localStorage.setItem('formData', JSON.stringify(formData));
+    localStorage.setItem('contactData', JSON.stringify(contactData));
   } else {
-    const formData = JSON.parse(localStorage.getItem('formData'));
-    document.querySelector('#name').value = formData.name;
-    document.querySelector('#email').value = formData.email;
-    document.querySelector('#message').value = formData.message;
+    const contactData = JSON.parse(localStorage.getItem('contactData'));
+    document.querySelector('#name').value = contactData.name;
+    document.querySelector('#email').value = contactData.email;
+    document.querySelector('#message').value = contactData.message;
   }
 }
 
