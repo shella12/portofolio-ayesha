@@ -3,7 +3,7 @@ document.querySelector('.form').addEventListener('submit', (event) => {
   const email = document.getElementById('email').value;
   if (email !== email.toLowerCase()) {
     event.preventDefault();
-    alert.innerHTML = 'Email input should be Lower Case! e.g example@gmail.com';
+    alert.innerHTML = 'Email input should be Lower Case! e.g: example@gmail.com';
     event.target.reset();
     alert.classList.add('active');
   } else {
