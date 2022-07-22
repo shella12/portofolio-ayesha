@@ -78,15 +78,11 @@ a {
   padding-top: 8rem;
   padding-bottom: 15rem;
   list-style: none;
-  transition: all 3s ease-out;
+  transition: all 1s ease-out;
 }
 
-.click-ul {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  height: 60%;
-  justify-content: space-around;
+.click li {
+  font-size: 20px;
 }
 
 .active {
@@ -207,7 +203,7 @@ a {
   margin: 15px;
 }
 
-.work h2 {
+.work h2.work-heading {
   font-family: 'Playfair', sans-serif;
   font-size: 50px;
   margin-bottom: 20px;
@@ -245,6 +241,24 @@ a {
   margin: 20px 20px 0 20px;
   display: inline;
 }
+
+/* popup-start */
+
+.pop-tech-list li {
+  border: 1px solid #1a2236;
+  padding: 10px 4%;
+  margin-top: 5px;
+  margin-right: 10px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+/* popup-end */
 
 .project .list-tech li {
   float: left;
@@ -475,6 +489,144 @@ footer .link_icons {
   justify-content: space-between;
 }
 
+/* popup-start */
+
+body.active {
+  overflow: hidden;
+}
+
+.container-base {
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  width: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+.container-popup {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  background-color: #fff;
+  width: fit-content;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  padding: 20px 15px;
+  z-index: 700;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: -11px 12px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+h2.pop-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 80%;
+  color: #1a2236;
+  margin-top: 25px;
+}
+
+ul.pop-tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+
+img.pop-img {
+  width: 100%;
+  height: 30vh;
+}
+
+div.pop-image-container {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  border-right: 1px solid #1a2236;
+}
+
+a.pop-btn img {
+  margin-left: 5px;
+}
+
+div.pop-image-container img:nth-child(1) {
+  outline: 2px solid #1a2236;
+  margin-right: 2px;
+}
+
+img.pop-img-loop {
+  width: 25%;
+  height: 12vh;
+}
+
+p.pop-description {
+  margin: 30px 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.pop-btn-div {
+  display: flex;
+  flex-direction: column;
+}
+
+a.pop-btn {
+  padding: 20px 20px;
+  margin: 10px 20px 30px 20px;
+  border: 1px solid #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1a2236;
+}
+
+a.pop-btn.pop-btn-live {
+  background: url(images/live-link.png) no-repeat;
+  background-position: 95% 50%;
+}
+
+a.pop-btn.pop-btn-src {
+  background: url(images/src-link.png) no-repeat;
+  background-position: 95% 50%;
+}
+
+.pop-link-div {
+  display: none;
+}
+
+span.alert {
+  visibility: hidden;
+  align-self: center;
+  font-size: 16px;
+  color: #1a2236;
+  background-color: transparent;
+  backdrop-filter: blur(24px);
+  margin: 30px 0;
+  padding: 10px;
+  border: 1px solid #1a2236;
+  border-radius: 10px;
+}
+
+span.alert.active {
+  visibility: visible;
+}
+
 /* Keyframes */
 @keyframes typing {
   from {
@@ -596,7 +748,7 @@ footer .link_icons {
     background-repeat: no-repeat;
   }
 
-  .work h2 {
+  .work h2.work-heading {
     grid-column: 1/3;
     grid-row: 1/4;
     padding: 0;
@@ -673,6 +825,10 @@ footer .link_icons {
     padding: 0;
     margin-top: 3px;
     font-size: 10px;
+  }
+
+  ul.pop-tech-list li {
+    font-size: 16px;
   }
 
   .p3 .list-tech li {
@@ -889,6 +1045,109 @@ footer .link_icons {
     transition: background-color 0.5s ease-out, color 0.5s ease-out;
   }
 
+  /* popup-desktop */
+
+  .popup-close {
+    width: 20px;
+    right: 20px;
+    font-size: 27px;
+  }
+
+  .container-popup {
+    background-color: #fff;
+    width: 94vw;
+    height: 99vh;
+    left: 20px;
+
+    /* margin: 15px; */
+    padding: 20px 35px;
+    border: 40px solid #1a2236f2;
+    border-radius: 0;
+    backdrop-filter: blur(24px);
+  }
+
+  .work h2.pop-title {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-left: 5%;
+  }
+
+  ul.pop-tech-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 28px 5%;
+  }
+
+  img.pop-img {
+    width: 90%;
+    height: 50vh;
+    align-self: center;
+  }
+
+  div.pop-image-container {
+    width: 90%;
+    height: 20vh;
+    align-self: center;
+  }
+
+  a.pop-btn img {
+    margin-left: 5px;
+  }
+
+  img.pop-img-loop {
+    height: 20vh;
+  }
+
+  p.pop-description {
+    align-self: center;
+    width: 60%;
+    font-size: 18px;
+  }
+
+  div.pop-btn-div {
+    flex-direction: row;
+    margin-left: 18%;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+  }
+
+  a.pop-btn {
+    padding: 10px 30px;
+    margin: 10px 20px 30px 20px;
+    text-align: start;
+    font-size: 0.9rem;
+    font-weight: 400;
+    flex: 1;
+    cursor: pointer;
+  }
+
+  .pop-link-div {
+    display: flex;
+    margin: 30px 20%;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+  }
+
+  .pop-prev-link {
+    background: url(/images/ic_arrow_left.png) no-repeat;
+    background-position: center left;
+    background-size: 18px;
+    padding: 9px 30px;
+    cursor: pointer;
+  }
+
+  .pop-next-link {
+    background: url(/images/ic_arrow_right.png) no-repeat;
+    background-position: center right;
+    background-size: 18px;
+    padding: 9px 30px;
+    cursor: pointer;
+  }
+
   /* hover-effects-desktop */
 
   .contact-form fieldset input:focus {
@@ -899,20 +1158,13 @@ footer .link_icons {
     outline: 1px solid #000;
   }
 
-  /* @keyframes typing {
-    from {
-      width: 0%;
-    }
-
-    to {
-      width: 38%;
-    }
+  .pop-prev-link:hover {
+    text-decoration: underline;
   }
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }  */
+
+  .pop-next-link:hover {
+    text-decoration: underline;
+  }
 }
 
 /* hover-effects */
@@ -970,4 +1222,37 @@ footer .link_icons {
 .contact-btn:active {
   padding: 12px 42px;
   border: 2px solid #1a2236;
+}
+
+a.pop-btn:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+a.pop-btn.pop-btn-live:hover {
+  background-image: url(images/Union.png);
+}
+
+a.pop-btn.pop-btn-live:active {
+  padding: 9px 29px;
+  background-color: #fff;
+  background-image: url(images/live-link.png);
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+a.pop-btn.pop-btn-src:hover {
+  background-image: url(images/ic_github_white.png);
+}
+
+a.pop-btn.pop-btn-src:active {
+  padding: 9px 29px;
+  background-color: #fff;
+  background-image: url(images/src-link.png);
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.container-popup::-webkit-scrollbar {
+  visibility: hidden;
 }
