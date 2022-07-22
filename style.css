@@ -374,6 +374,11 @@ a {
   background-color: #f9f9fa;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form h2 {
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
