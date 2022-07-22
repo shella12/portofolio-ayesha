@@ -100,5 +100,19 @@ projectBtn.forEach((element, index) => {
     popNextLink.className = 'pop-next-link';
     popNextLink.innerText = 'Next Project';
     popLinkDiv.appendChild(popNextLink);
+
+    popPrevLink.addEventListener('click', (event) => {
+      if (index = 0) {
+        index = 5;
+      }
+      index--;
+    })
+
+    popNextLink.addEventListener('click', (event) => {
+      if (index = 5) {
+        index = 0;
+      }
+      index++;
+    })
   });
 });
