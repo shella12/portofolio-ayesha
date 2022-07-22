@@ -105,14 +105,14 @@ projectBtn.forEach((element, index) => {
       if (index = 0) {
         index = 5;
       }
-      index--;
-    })
+      index = index -1;
+    });
 
     popNextLink.addEventListener('click', (event) => {
       if (index = 5) {
         index = 0;
       }
-      index++;
-    })
+      index = index +1;
+    });
   });
 });
