@@ -600,6 +600,7 @@ a.pop-btn {
 }
 
 span.alert {
+  visibility: hidden;
   align-self: center;
   font-size: 16px;
   color: #1a2236;
@@ -609,6 +610,10 @@ span.alert {
   padding: 10px;
   border: 1px solid #1a2236;
   border-radius: 10px;
+}
+
+span.alert.active {
+  visibility: visible;
 }
 
 /* Keyframes */
