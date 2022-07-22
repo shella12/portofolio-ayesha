@@ -102,17 +102,17 @@ projectBtn.forEach((element, index) => {
     popLinkDiv.appendChild(popNextLink);
 
     popPrevLink.addEventListener('click', (event) => {
-      if (index = 0) {
+      if (index === 0) {
         index = 5;
       }
       index -= 1;
     });
 
     popNextLink.addEventListener('click', (event) => {
-      if (index = 5) {
+      if (index === 5) {
         index = 0;
       }
-      index += 1 ;
+      index += 1;
     });
   });
 });
