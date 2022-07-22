@@ -497,7 +497,6 @@ body.active {
 
 .container-base {
   position: relative;
-  top: 0;
 }
 
 .popup-close {
@@ -514,7 +513,7 @@ body.active {
   overflow-y: scroll;
   position: fixed;
   background-color: #fff;
-  width: 93vw;
+  width: fit-content;
   height: 100vh;
   top: 0;
   left: 0;
@@ -1056,7 +1055,7 @@ span.alert.active {
 
   .container-popup {
     background-color: #fff;
-    width: 95vw;
+    width: 94vw;
     height: 99vh;
     left: 20px;
 
@@ -1230,20 +1229,28 @@ a.pop-btn:hover {
   color: #fff;
 }
 
-a.pop-btn.pop-btn-live:active {
-  border: 2px solid #1a2236;
-}
-
 a.pop-btn.pop-btn-live:hover {
   background-image: url(images/Union.png);
 }
 
-a.pop-btn.pop-btn-src:active {
+a.pop-btn.pop-btn-live:active {
+  padding: 9px 29px;
+  background-color: #fff;
+  background-image: url(images/live-link.png);
+  color: #1a2236;
   border: 2px solid #1a2236;
 }
 
 a.pop-btn.pop-btn-src:hover {
   background-image: url(images/ic_github_white.png);
+}
+
+a.pop-btn.pop-btn-src:active {
+  padding: 9px 29px;
+  background-color: #fff;
+  background-image: url(images/src-link.png);
+  color: #1a2236;
+  border: 2px solid #1a2236;
 }
 
 .container-popup::-webkit-scrollbar {
