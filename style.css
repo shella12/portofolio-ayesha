@@ -619,27 +619,6 @@ span.alert {
   visibility: hidden;
   align-self: center;
   font-size: 16px;
-  color: #1a2236;
-  background-color: transparent;
-  backdrop-filter: blur(24px);
-  margin: 30px 0;
-  padding: 10px;
-  border: 1px solid #1a2236;
-  border-radius: 10px;
-}
-
-span.alert.active {
-  visibility: visible;
-}
-
-.pop-link-div {
-  display: none;
-}
-
-span.alert {
-  visibility: hidden;
-  align-self: center;
-  font-size: 16px;
   color: #900;
   background-color: transparent;
   backdrop-filter: blur(30px);
@@ -1183,6 +1162,7 @@ span.alert.active {
   .contact-form textarea:focus {
     outline: 1px solid #000;
   }
+
   .pop-prev-link:hover {
     text-decoration: underline;
   }
@@ -1191,92 +1171,93 @@ span.alert.active {
     text-decoration: underline;
   }
 
-/* hover-effects */
+  /* hover-effects */
 
-.project button:hover {
-  background: #fff;
-  color: #1a2236;
-  border: 1px solid #1a2236;
-}
+  .project button:hover {
+    background: #fff;
+    color: #1a2236;
+    border: 1px solid #1a2236;
+  }
 
-.project button:active {
-  border-color: #fff;
-  outline: 1px solid #fff;
-}
+  .project button:active {
+    border-color: #fff;
+    outline: 1px solid #fff;
+  }
 
-.project > button:hover i {
-  color: #1a2236;
-}
+  .project > button:hover i {
+    color: #1a2236;
+  }
 
-.primary-button button:hover {
-  background-color: white;
-  color: #1a2236;
-}
+  .primary-button button:hover {
+    background-color: white;
+    color: #1a2236;
+  }
 
-.primary-button button:active {
-  border: 2px solid #1a2236;
-  padding: 11px 42px;
-}
+  .primary-button button:active {
+    border: 2px solid #1a2236;
+    padding: 11px 42px;
+  }
 
-.about-us button:hover {
-  background: #fff url(images/ic_download_hover.png) 68% 40% no-repeat;
-  background-size: 32px;
-  border: 1px solid #1a2236;
-  color: #1a2236;
-}
+  .about-us button:hover {
+    background: #fff url(images/ic_download_hover.png) 68% 40% no-repeat;
+    background-size: 32px;
+    border: 1px solid #1a2236;
+    color: #1a2236;
+  }
 
-.about-us button:active {
-  outline: 1px solid #1a2236;
-}
+  .about-us button:active {
+    outline: 1px solid #1a2236;
+  }
 
-.desk-nav ul li a:hover,
-.desk-nav ul li a:focus {
-  background-color: #1a2236;
-  color: #fff;
-}
+  .desk-nav ul li a:hover,
+  .desk-nav ul li a:focus {
+    background-color: #1a2236;
+    color: #fff;
+  }
 
-.contact-btn:hover {
-  outline: none;
-  border: 1px solid  #1a2236;
-  background-color: white;
-  padding: 13px 42px;
-  color: #1a2236;
-}
+  .contact-btn:hover {
+    outline: none;
+    border: 1px solid  #1a2236;
+    background-color: white;
+    padding: 13px 42px;
+    color: #1a2236;
+  }
 
-.contact-btn:active {
-  padding: 12px 42px;
-  border: 2px solid #1a2236;
-}
+  .contact-btn:active {
+    padding: 12px 42px;
+    border: 2px solid #1a2236;
+  }
 
-a.pop-btn:hover {
-  background-color: #1a2236;
-  color: #fff;
-}
+  a.pop-btn:hover {
+    background-color: #1a2236;
+    color: #fff;
+  }
 
-a.pop-btn.pop-btn-live:hover {
-  background-image: url(images/Union.png);
-}
+  a.pop-btn.pop-btn-live:hover {
+    background-image: url(images/Union.png);
+  }
 
-a.pop-btn.pop-btn-live:active {
-  padding: 9px 29px;
-  background-color: #fff;
-  background-image: url(images/live-link.png);
-  color: #1a2236;
-  border: 2px solid #1a2236;
-}
+  a.pop-btn.pop-btn-live:active {
+    padding: 9px 29px;
+    background-color: #fff;
+    background-image: url(images/live-link.png);
+    color: #1a2236;
+    border: 2px solid #1a2236;
+  }
 
-a.pop-btn.pop-btn-src:hover {
-  background-image: url(images/ic_github_white.png);
-}
+  a.pop-btn.pop-btn-src:hover {
+    background-image: url(images/ic_github_white.png);
+  }
 
-a.pop-btn.pop-btn-src:active {
-  padding: 9px 29px;
-  background-color: #fff;
-  background-image: url(images/src-link.png);
-  color: #1a2236;
-  border: 2px solid #1a2236;
-}
+  a.pop-btn.pop-btn-src:active {
+    padding: 9px 29px;
+    background-color: #fff;
+    background-image: url(images/src-link.png);
+    color: #1a2236;
+    border: 2px solid #1a2236;
+  }
 
-.container-popup::-webkit-scrollbar {
-  visibility: hidden;
+  .container-popup::-webkit-scrollbar {
+    visibility: hidden;
+  }
 }
