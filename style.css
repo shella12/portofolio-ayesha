@@ -578,10 +578,12 @@ p.pop-description {
   font-size: 18px;
   line-height: 27px;
 }
-.pop-btn-div{
+
+.pop-btn-div {
   display: flex;
   flex-direction: column;
 }
+
 a.pop-btn {
   padding: 20px 20px;
   margin: 10px 20px 30px 20px;
@@ -594,18 +596,21 @@ a.pop-btn {
   text-align: center;
   color: #1a2236;
 }
-a.pop-btn.pop-btn-live{
-background: url(images/live-link.png)no-repeat;
-background-position: 95% 50%;
+
+a.pop-btn.pop-btn-live {
+  background: url(images/live-link.png) no-repeat;
+  background-position: 95% 50%;
 }
-a.pop-btn.pop-btn-src{
-  background: url(images/src-link.png)no-repeat;
+
+a.pop-btn.pop-btn-src {
+  background: url(images/src-link.png) no-repeat;
   background-position: 95% 50%;
 }
 
 .pop-link-div {
   display: none;
 }
+
 span.alert {
   visibility: hidden;
   align-self: center;
@@ -618,9 +623,10 @@ span.alert {
   border: 1px solid #1a2236;
   border-radius: 10px;
 }
-span.alert.active{
+
+span.alert.active {
   visibility: visible;
-} 
+}
 
 /* Keyframes */
 @keyframes typing {
@@ -821,7 +827,8 @@ span.alert.active{
     margin-top: 3px;
     font-size: 10px;
   }
-    ul.pop-tech-list li {
+
+  ul.pop-tech-list li {
     font-size: 16px;
   }
 
@@ -1112,7 +1119,7 @@ span.alert.active{
     padding: 10px 30px;
     margin: 10px 20px 30px 20px;
     text-align: start;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 400;
     flex: 1;
     cursor: pointer;
@@ -1126,21 +1133,22 @@ span.alert.active{
     width: 55%;
   }
 
-  .pop-prev-link{
+  .pop-prev-link {
     background: url(/images/ic_arrow_left.png) no-repeat;
     background-position: center left;
     background-size: 18px;
     padding: 9px 30px;
     cursor: pointer;
   }
-  .pop-next-link{
+
+  .pop-next-link {
     background: url(/images/ic_arrow_right.png) no-repeat;
     background-position: center right;
     background-size: 18px;
     padding: 9px 30px;
     cursor: pointer;
   }
-  
+
   /* hover-effects-desktop */
 
   .contact-form fieldset input:focus {
@@ -1150,10 +1158,12 @@ span.alert.active{
   .contact-form textarea:focus {
     outline: 1px solid #000;
   }
-  .pop-prev-link:hover{
+
+  .pop-prev-link:hover {
     text-decoration: underline;
   }
-  .pop-next-link:hover{
+
+  .pop-next-link:hover {
     text-decoration: underline;
   }
 }
@@ -1215,16 +1225,19 @@ span.alert.active{
   border: 2px solid #1a2236;
 }
 
-a.pop-btn:hover{
+a.pop-btn:hover {
   background-color: #1a2236;
   color: #fff;
 }
-a.pop-btn.pop-btn-live:hover{
-background-image: url(images/Union.png);
-} 
-a.pop-btn.pop-btn-src:hover{
-background-image: url(images/ic_github_white.png);
-} 
+
+a.pop-btn.pop-btn-live:hover {
+  background-image: url(images/Union.png);
+}
+
+a.pop-btn.pop-btn-src:hover {
+  background-image: url(images/ic_github_white.png);
+}
+
 .container-popup::-webkit-scrollbar {
   visibility: hidden;
 }
