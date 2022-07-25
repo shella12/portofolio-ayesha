@@ -9,6 +9,7 @@
 ## Live Demo
 
 [Live Demo](https://shella12.github.io/Portfolio.github.io/)
+![](./images/Multi-Devicer-Web-mockup.png)
 
 ## Authors
 
