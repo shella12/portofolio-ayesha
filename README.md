@@ -1,5 +1,5 @@
-# protofolio
-> This a protofolio website that inlists all my experiences and education
+# portfolio
+> This a portfolio website that inlists all my experiences and education
 
 ## Built With
 
