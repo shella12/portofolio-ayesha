@@ -5,7 +5,7 @@ const imagesSrc = ['./images/project1.png', './images/project5.png', './images/p
 const techTags = ['HTML/CSS', 'Ruby on Rails', 'JavaScript'];
 const work = document.querySelector('.work');
 projectBtn.forEach((element, index) => {
-  /* eslint-disable no-unused-vars */
+  // eslint-disable-next-line no-unused-vars
   element.addEventListener('click', (event) => {
     body.classList.add('active');
 
@@ -20,7 +20,7 @@ projectBtn.forEach((element, index) => {
     const popClose = document.createElement('button');
     popClose.className = 'popup-close';
     popClose.innerText = 'X';
-    /* eslint-disable no-unused-vars */
+    // eslint-disable-next-line no-unused-vars
     popClose.addEventListener('click', ((event) => {
       body.classList.remove('active');
       container.remove();
@@ -51,7 +51,7 @@ projectBtn.forEach((element, index) => {
     popImageContainer.className = 'pop-image-container';
     pop.appendChild(popImageContainer);
 
-    /* eslint-disable no-plusplus */
+    // eslint-disable-next-line no-plusplus
     for (let i = 0; i < 4; i++) {
       const image = document.createElement('img');
       imageArray.push(image);
@@ -74,20 +74,10 @@ projectBtn.forEach((element, index) => {
     popBtnLive.innerText = 'See Live';
     popBtnLiveDiv.appendChild(popBtnLive);
 
-    // const popBtnLiveImage = document.createElement('img');
-    // popBtnLiveImage.src = './images/live-link.png';
-    // popBtnLiveImage.className = 'pop-a-img';
-    // popBtnLive.appendChild(popBtnLiveImage);
-
     const popBtnSource = document.createElement('a');
     popBtnSource.className = 'pop-btn pop-btn-src';
     popBtnSource.innerText = 'See Source';
     popBtnLiveDiv.appendChild(popBtnSource);
-
-    // const popBtnSrcImage = document.createElement('img');
-    // popBtnSrcImage.src = './images/src-link.png';
-    // popBtnSrcImage.className = 'pop-a-img';
-    // popBtnSource.appendChild(popBtnSrcImage);
 
     const popLinkDiv = document.createElement('div');
     popLinkDiv.className = 'pop-link-div';
@@ -103,7 +93,7 @@ projectBtn.forEach((element, index) => {
     popNextLink.innerText = 'Next Project';
     popLinkDiv.appendChild(popNextLink);
 
-    popPrevLink.addEventListener('click', (event) => {
+    popPrevLink.addEventListener('click', () => {
       if (index === 0) {
         index = 5;
       } else index -= 1;
@@ -114,7 +104,7 @@ projectBtn.forEach((element, index) => {
       imageArray[3].src = imagesSrc[index];
     });
 
-    popNextLink.addEventListener('click', (event) => {
+    popNextLink.addEventListener('click', () => {
       if (index === 5) {
         index = 0;
       } else index += 1;
