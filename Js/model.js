@@ -1,51 +1,72 @@
 const projectBtn = document.querySelectorAll('.projectBtn');
 const imageArray = [];
 const body = document.querySelector('body');
-const imagesSrc = ['./images/project1.png', './images/project5.png', './images/project2.png', './images/project4.png', './images/project3.png', './images/project6.png'];
-const techTags = ['HTML/CSS', 'Ruby on Rails', 'JavaScript'];
+const projects = [
+  {
+    name: "Aebinar",
+    techTags: ["HTML","CSS","JavaScript"],
+    imagesSrc: './images/project1.png',
+  },
+  {
+    name: "Space X Hub",
+    techTags: ["CSS","React/Redux","RESTFUL APIs"],
+    imagesSrc: './images/project2.png',
+  },
+  {
+    name: "Air Quality Index (AQI)",
+    techTags: ["CSS","React/Redux","RESTFUL APIs", "Google APIs"],
+    imagesSrc: './images/project3.png',
+  },
+  {
+    name: "Book Store",
+    techTags: ["CSS","React/Redux","RESTFUL APIs"],
+    imagesSrc: './images/project4.png',
+  },
+  {
+    name: "PokeCard",
+    techTags: ["HTML/CSS","JavaScript","RESTFUL APIs","Webpack"],
+    imagesSrc: './images/project5.png',
+  },
+  {
+    name: "Math Magician",
+    techTags: ["CSS","React"],
+    imagesSrc: './images/project6.png',
+  }
+];
+
+const techStack = (techTags) => {
+list = ``;
+techTags.forEach((tag) => {
+list += `<li>${tag}</li>`
+})
+return list;
+}
+
 const work = document.querySelector('.work');
 projectBtn.forEach((element, index) => {
-  /* eslint-disable no-unused-vars */
-  element.addEventListener('click', (event) => {
+ 
+  element.addEventListener('click', () => {
     body.classList.add('active');
 
     const container = document.createElement('div');
     container.className = 'container-base';
+    container.innerHTML = `<div class="container-popup">
+    <h2 class="pop-title">Project name goes here</h2>
+    <button type="button" class="popup-close">X</button>
+    <ul class="pop-tech-list">
+    ${techStack(projects[index].techTags)}
+    </ul>
+    <img class="pop-img" src=${projects[index].imagesSrc} alt="Project Image"/>
+    </div>`;
     work.prepend(container);
 
-    const pop = document.createElement('div');
-    pop.className = 'container-popup';
-    container.appendChild(pop);
+    const popClose = document.querySelector('.popup-close');
+    const popTechList = document.querySelector('.pop-tech-list');
 
-    const popClose = document.createElement('button');
-    popClose.className = 'popup-close';
-    popClose.innerText = 'X';
-    /* eslint-disable no-unused-vars */
-    popClose.addEventListener('click', ((event) => {
+    popClose.addEventListener('click', (() => {
       body.classList.remove('active');
       container.remove();
     }));
-    pop.appendChild(popClose);
-
-    const popTitle = document.createElement('h2');
-    popTitle.innerHTML = 'Project name goes here';
-    popTitle.className = 'pop-title';
-    pop.appendChild(popTitle);
-
-    const popTechList = document.createElement('ul');
-    popTechList.className = 'pop-tech-list';
-    pop.appendChild(popTechList);
-
-    techTags.forEach((element) => {
-      const popTechListContent = document.createElement('li');
-      popTechListContent.innerHTML = element;
-      popTechList.appendChild(popTechListContent);
-    });
-
-    const popImage = document.createElement('img');
-    popImage.src = imagesSrc[index];
-    popImage.className = 'pop-img';
-    pop.appendChild(popImage);
 
     const popImageContainer = document.createElement('div');
     popImageContainer.className = 'pop-image-container';
@@ -74,20 +95,10 @@ projectBtn.forEach((element, index) => {
     popBtnLive.innerText = 'See Live';
     popBtnLiveDiv.appendChild(popBtnLive);
 
-    // const popBtnLiveImage = document.createElement('img');
-    // popBtnLiveImage.src = './images/live-link.png';
-    // popBtnLiveImage.className = 'pop-a-img';
-    // popBtnLive.appendChild(popBtnLiveImage);
-
     const popBtnSource = document.createElement('a');
     popBtnSource.className = 'pop-btn pop-btn-src';
     popBtnSource.innerText = 'See Source';
     popBtnLiveDiv.appendChild(popBtnSource);
-
-    // const popBtnSrcImage = document.createElement('img');
-    // popBtnSrcImage.src = './images/src-link.png';
-    // popBtnSrcImage.className = 'pop-a-img';
-    // popBtnSource.appendChild(popBtnSrcImage);
 
     const popLinkDiv = document.createElement('div');
     popLinkDiv.className = 'pop-link-div';
