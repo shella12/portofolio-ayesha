@@ -566,6 +566,7 @@ div.pop-image-container img:nth-child(1) {
 }
 
 img.pop-img-loop {
+  object-fit: contain;
   width: 25%;
   height: 12vh;
 }
