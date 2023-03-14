@@ -314,17 +314,18 @@ a {
   text-align: justify;
 }
 
-.about-us button {
-  width: 100%;
-  background: #1a2236 url(images/ic_download.png) 68% 46% no-repeat;
+.cv-btn {
+  display:block;
+  background: #1a2236 url(images/ic_download.png) 78% 46% no-repeat;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.01em;
   color: #fff;
   padding: 16px;
   outline: none;
+  width: 100%;
+  text-align: center;
   transition: all 0.3s ease-out;
 }
 
@@ -565,6 +566,7 @@ div.pop-image-container img:nth-child(1) {
 }
 
 img.pop-img-loop {
+  object-fit: contain;
   width: 25%;
   height: 12vh;
 }
@@ -882,15 +884,14 @@ span.alert.active {
     text-align: justify;
   }
 
-  .about-us button {
+  .cv-btn {
     width: fit-content;
-    background: #1a2236 url(images/ic_download.png) 68% 45% no-repeat;
+    background: #1a2236 url(images/ic_download.png) 90% 45% no-repeat;
     background-size: 22px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     padding: 10px 88px 10px 20px;
-    text-align: left;
     outline: none;
   }
 
@@ -1194,14 +1195,14 @@ span.alert.active {
   padding: 11px 42px;
 }
 
-.about-us button:hover {
-  background: #fff url(images/ic_download_hover.png) 68% 40% no-repeat;
+.cv-btn:hover {
+  background: #fff url(images/ic_download_hover.png) 78% 40% no-repeat;
   background-size: 32px;
   border: 1px solid #1a2236;
   color: #1a2236;
 }
 
-.about-us button:active {
+.cv-btn:active {
   outline: 1px solid #1a2236;
 }
 
