@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   position: relative;
   background: url(images/ShapeTriangle.png) 0 0 no-repeat, url(images/Shape.png) 35px 0 no-repeat;
@@ -166,7 +170,7 @@ a {
   letter-spacing: -0.01em;
 }
 
-.primary-button{
+.primary-button {
   background-color: #1a2236;
   padding: 12px 42px;
   border: 1px solid #1a2236;
@@ -647,7 +651,6 @@ span.alert.active {
     position: fixed;
     background-color: #fff;
     width: 100%;
-    height: 50px;
     top: 0;
     left: 0;
     z-index: 20;
@@ -667,7 +670,10 @@ span.alert.active {
   }
 
   .container .desk-nav ul {
-    margin: 22px;
+    display: flex;
+    gap: 20%;
+    padding-top: 12px;
+    padding-bottom: 10px;
   }
 
   .container .main {
@@ -1019,8 +1025,8 @@ span.alert.active {
   }
 
   .container .desk-nav ul li {
-    display: inline;
-    padding: 32px;
+    position: relative;
+    padding: 5px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1196,10 +1202,19 @@ span.alert.active {
   outline: 1px solid #1a2236;
 }
 
-.desk-nav ul li a:hover,
-.desk-nav ul li a:focus {
-  background-color: #1a2236;
-  color: #fff;
+.desk-nav ul li::after {
+  position: absolute;
+  content: '';
+  display: none;
+  width: 95%;
+  height: 0.25rem;
+  margin-top: 2px;
+  background-color: #000;
+  transition: all 1s;
+}
+
+.desk-nav ul li:hover::after {
+  display: block;
 }
 
 .contact-btn:hover {
