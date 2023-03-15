@@ -166,17 +166,7 @@ a {
   letter-spacing: -0.01em;
 }
 
-.primary-button {
-  margin: 32px 30px;
-
-  /* border: none; */
-  display: flex;
-  background-color: #1a2236;
-  justify-content: center;
-}
-
-.primary-button button {
-  flex: 1;
+.primary-button{
   background-color: #1a2236;
   padding: 12px 42px;
   border: 1px solid #1a2236;
