@@ -1202,7 +1202,7 @@ span.alert.active {
   outline: 1px solid #1a2236;
 }
 
-.desk-nav ul li::after {
+.desk-nav li::after {
   position: absolute;
   content: '';
   display: none;
@@ -1210,10 +1210,10 @@ span.alert.active {
   height: 0.25rem;
   margin-top: 2px;
   background-color: #000;
-  transition: all 1s;
+  transition: all 1s ease 0s;
 }
 
-.desk-nav ul li:hover::after {
+.desk-nav li:hover::after {
   display: block;
 }
 

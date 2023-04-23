@@ -64,6 +64,15 @@ const projects = [
     seeLive: 'https://636d4335ca433e14cbbda6f5--lovely-frangipane-389b3a.netlify.app/',
     seeSource: 'https://github.com/shella12/calculator',
   },
+  {
+    name: 'GStream',
+    techTags: ['CSS', 'React'],
+    imagesSrc: './images/project7.png',
+    imageArray: ['./images/project7.png', './images/project7.png', './images/project7.png', './images/project7.png'],
+    description: 'This is a React frontend project with an interactive and user-friendly interface and quick navigation for streaming videos. The design has been replicated from a Figma design.(Figma link can be viewed in github repo)',
+    seeLive: 'https://deft-macaron-85e421.netlify.app/',
+    seeSource: 'https://github.com/shella12/GStream',
+  },
 ];
 
 const techStack = (techTags) => {
