@@ -135,7 +135,7 @@ projectBtn.forEach((element, index) => {
 
     popPrevLink.addEventListener('click', (() => {
       // eslint-disable-next-line no-unused-expressions
-      index === 0 ? index = 5 : index -= 1;
+      index === 0 ? index = (projects.length - 1) : index -= 1;
       techList.innerHTML = `${techStack(projects[index].techTags)}`;
       mainImage.src = projects[index].imagesSrc;
       imageContainer.innerHTML = `
@@ -150,7 +150,7 @@ projectBtn.forEach((element, index) => {
 
     popNextLink.addEventListener('click', (() => {
       // eslint-disable-next-line no-unused-expressions
-      index === 5 ? index = 0 : index += 1;
+      index === (projects.length - 1) ? index = 0 : index += 1;
       techList.innerHTML = `${techStack(projects[index].techTags)}`;
       mainImage.src = projects[index].imagesSrc;
       imageContainer.innerHTML = `
