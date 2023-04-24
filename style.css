@@ -796,21 +796,27 @@ span.alert.active {
   .p2 h3,
   .p4 h3,
   .p5 h3,
-  .p6 h3 {
+  .p6 h3,
+  .p7 h3,
+  .p8 h3 {
     display: none;
   }
 
   .p2 .list-tech,
   .p4 .list-tech,
   .p5 .list-tech,
-  .p6 .list-tech {
+  .p6 .list-tech,
+  .p7 .list-tech,
+  .p8 .list-tech {
     display: none;
   }
 
   .p2 button,
   .p4 button,
   .p5 button,
-  .p6 button {
+  .p6 button,
+  .p7 button,
+  .p8 button {
     display: none;
   }
 
@@ -845,7 +851,8 @@ span.alert.active {
     font-size: 8px;
   }
 
-  .p6 img {
+  .p6 img,
+  .p8 img {
     display: none;
   }
 
@@ -1081,6 +1088,7 @@ span.alert.active {
     width: 90%;
     height: 50vh;
     align-self: center;
+    object-fit: cover;
   }
 
   div.pop-image-container {

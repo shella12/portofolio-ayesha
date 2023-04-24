@@ -73,6 +73,18 @@ const projects = [
     seeLive: 'https://deft-macaron-85e421.netlify.app/',
     seeSource: 'https://github.com/shella12/GStream',
   },
+  {
+    name: 'Budget it!',
+    techTags: ['Ruby', 'Ruby on Rails',' Postgresql'],
+    imagesSrc: './images/project8.png',
+    imageArray: ['./images/project8c.png', './images/project8a.png', './images/project8b.png', './images/project8d.png'],
+    description:  'The Budget app keeps track of your transcations It allows the user to:'
+    + '- Register and log in, so that the data is private to them.'
+    + '- Introduce new transactions associated with a category.'
+    + '- See the money spent on each category.',
+    seeLive: 'https://budget-app-bbuu.onrender.com/',
+    seeSource: 'https://github.com/shella12/budget-app',
+  },
 ];
 
 const techStack = (techTags) => {
