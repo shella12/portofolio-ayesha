@@ -540,14 +540,15 @@ ul.pop-tech-list {
 
 img.pop-img {
   width: 100%;
-  height: 30vh;
+  aspect-ratio: 1/1;
+  object-fit: scale-down;
 }
 
 div.pop-image-container {
-  width: 100%;
-  height: 12vh;
+  max-width: 100%;
+  aspect-ratio: 2/1;
   display: flex;
-  border-right: 1px solid #1a2236;
+  border: 1px solid #1a2236;
 }
 
 a.pop-btn img {
@@ -555,14 +556,14 @@ a.pop-btn img {
 }
 
 div.pop-image-container img:nth-child(1) {
-  outline: 2px solid #1a2236;
+  border: thick solid #1a2236;
   margin-right: 2px;
 }
 
 img.pop-img-loop {
   object-fit: contain;
   width: 25%;
-  height: 12vh;
+  aspect-ratio: 1/1;
 }
 
 p.pop-description {
@@ -1088,12 +1089,12 @@ span.alert.active {
     width: 90%;
     height: 50vh;
     align-self: center;
-    object-fit: cover;
+    object-fit: scale-down;
   }
 
   div.pop-image-container {
     width: 90%;
-    height: 20vh;
+    aspect-ratio: 2/1;
     align-self: center;
   }
 
