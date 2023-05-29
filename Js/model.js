@@ -75,10 +75,10 @@ const projects = [
   },
   {
     name: 'Budget it!',
-    techTags: ['Ruby', 'Ruby on Rails',' Postgresql'],
+    techTags: ['Ruby', 'Ruby on Rails', ' Postgresql'],
     imagesSrc: './images/project8.png',
     imageArray: ['./images/project8c.png', './images/project8a.png', './images/project8b.png', './images/project8d.png'],
-    description:  'The Budget app keeps track of your transcations It allows the user to:'
+    description: 'The Budget app keeps track of your transcations It allows the user to:'
     + '- Register and log in, so that the data is private to them.'
     + '- Introduce new transactions associated with a category.'
     + '- See the money spent on each category.',
@@ -139,7 +139,9 @@ projectBtn.forEach((element, index) => {
     const description = document.querySelector('.pop-description');
     const seeLive = document.querySelector('.pop-btn-live');
     const seeSrc = document.querySelector('.pop-btn-src');
-
+    imageContainer.addEventListener('click', ((e) => {
+      mainImage.src = e.target.src;
+    }));
     popClose.addEventListener('click', (() => {
       body.classList.remove('active');
       container.remove();
