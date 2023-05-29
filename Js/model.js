@@ -141,6 +141,8 @@ projectBtn.forEach((element, index) => {
     const seeSrc = document.querySelector('.pop-btn-src');
     imageContainer.addEventListener('click', ((e) => {
       mainImage.src = e.target.src;
+      document.querySelectorAll('.pop-img-loop').forEach((image)=> image.style.border = 'none');
+      e.target.style.border = "thick solid #000000";
     }));
     popClose.addEventListener('click', (() => {
       body.classList.remove('active');
