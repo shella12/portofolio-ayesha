@@ -1,6 +1,3 @@
-const projectBtn = document.querySelectorAll('.projectBtn');
-const body = document.querySelector('body');
-
 const projects = [
   {
     name: 'Aebinar',
@@ -76,8 +73,8 @@ const projects = [
   {
     name: 'Budget it!',
     techTags: ['Ruby', 'Ruby on Rails', ' Postgresql'],
-    imagesSrc: './images/project8.png',
-    imageArray: ['./images/project8c.png', './images/project8a.png', './images/project8b.png', './images/project8d.png'],
+    imagesSrc: './images/project8e.png',
+    imageArray: ['./images/project8e.png', './images/project8.png', './images/project8b.png', './images/project8d.png'],
     description: 'The Budget app keeps track of your transcations It allows the user to:'
     + '- Register and log in, so that the data is private to them.'
     + '- Introduce new transactions associated with a category.'
@@ -85,98 +82,15 @@ const projects = [
     seeLive: 'https://budget-app-bbuu.onrender.com/',
     seeSource: 'https://github.com/shella12/budget-app',
   },
+  {
+    name: 'Kanban Clone',
+    techTags: ['CSS', 'React'],
+    imagesSrc: './images/kanbanClone.png',
+    imageArray: ['./images/kanbanClone.png', './images/kanbanClonea.png', './images/kanbanCloneb.png', './images/kanbanClonec.png'],
+    description: 'This project is built using PokeAPI for pokemon and Involvement API for interactions. In this project, you can view different Pokemons and their abilities. You can give a like to your favorite pokemon. You can also share your thoughts on the pokemon by commenting on it.',
+    seeLive: 'https://hilarious-cassata-b7ebd3.netlify.app/',
+    seeSource: 'https://github.com/shella12/kanban-board-replica',
+  },
 ];
 
-const techStack = (techTags) => {
-  let list = '';
-  techTags.forEach((tag) => {
-    list += `<li>${tag}</li>`;
-  });
-  return list;
-};
-
-const innerContent = (index) => `<div class="container-popup">
-<h2 class="pop-title">Project name goes here</h2>
-<button type="button" class="popup-close">X</button>
-<ul class="pop-tech-list">
-${techStack(projects[index].techTags)}
-</ul>
-<img class="pop-img" src=${projects[index].imagesSrc} alt="Project Image"/>
-<div class="pop-image-container">
-<img src="${projects[index].imageArray[0]}" class="pop-img-loop" alt="small project images"/>
-<img src="${projects[index].imageArray[1]}" class="pop-img-loop" alt="small project images"/>
-<img src="${projects[index].imageArray[2]}" class="pop-img-loop" alt="small project images"/>
-<img src="${projects[index].imageArray[3]}" class="pop-img-loop" alt="small project images"/>
-</div>
-<p class="pop-description">${projects[index].description}</p>
-<div class="pop-btn-div">
-<a href="${projects[index].seeLive}" class="pop-btn pop-btn-live">See Live</a>
-<a href="${projects[index].seeSource}" class="pop-btn pop-btn-src">See Source</a>
-</div>
-
-<div class="pop-link-div">
-<a class="pop-prev-link">Previous Project</a>
-<a class="pop-next-link">Next Project</a>
-</div>
-</div>`;
-
-const work = document.querySelector('.work');
-projectBtn.forEach((element, index) => {
-  element.addEventListener('click', () => {
-    body.classList.add('active');
-
-    const container = document.createElement('div');
-    container.className = 'container-base';
-    container.innerHTML = innerContent(index);
-    work.prepend(container);
-
-    const popClose = document.querySelector('.popup-close');
-    const popPrevLink = document.querySelector('.pop-prev-link');
-    const popNextLink = document.querySelector('.pop-next-link');
-    const techList = document.querySelector('.pop-tech-list');
-    const mainImage = document.querySelector('.pop-img');
-    const imageContainer = document.querySelector('.pop-image-container');
-    const description = document.querySelector('.pop-description');
-    const seeLive = document.querySelector('.pop-btn-live');
-    const seeSrc = document.querySelector('.pop-btn-src');
-    imageContainer.addEventListener('click', ((e) => {
-      mainImage.src = e.target.src;
-      document.querySelectorAll('.pop-img-loop').forEach((image) => { image.style.border = 'none'; });
-      e.target.style.border = 'thick solid #000000';
-    }));
-    popClose.addEventListener('click', (() => {
-      body.classList.remove('active');
-      container.remove();
-    }));
-
-    popPrevLink.addEventListener('click', (() => {
-      // eslint-disable-next-line no-unused-expressions
-      index === 0 ? index = (projects.length - 1) : index -= 1;
-      techList.innerHTML = `${techStack(projects[index].techTags)}`;
-      mainImage.src = projects[index].imagesSrc;
-      imageContainer.innerHTML = `
-      <img src="${projects[index].imageArray[0]}" class="pop-img-loop" alt="small project images"/>
-      <img src="${projects[index].imageArray[1]}" class="pop-img-loop" alt="small project images"/>
-      <img src="${projects[index].imageArray[2]}" class="pop-img-loop" alt="small project images"/>
-      <img src="${projects[index].imageArray[3]}" class="pop-img-loop" alt="small project images"/>`;
-      description.innerHTML = projects[index].description;
-      seeLive.href = projects[index].seeLive;
-      seeSrc.href = projects[index].seeSource;
-    }));
-
-    popNextLink.addEventListener('click', (() => {
-      // eslint-disable-next-line no-unused-expressions
-      index === (projects.length - 1) ? index = 0 : index += 1;
-      techList.innerHTML = `${techStack(projects[index].techTags)}`;
-      mainImage.src = projects[index].imagesSrc;
-      imageContainer.innerHTML = `
-      <img src="${projects[index].imageArray[0]}" class="pop-img-loop" alt="small project images"/>
-      <img src="${projects[index].imageArray[1]}" class="pop-img-loop" alt="small project images"/>
-      <img src="${projects[index].imageArray[2]}" class="pop-img-loop" alt="small project images"/>
-      <img src="${projects[index].imageArray[3]}" class="pop-img-loop" alt="small project images"/>`;
-      description.innerHTML = projects[index].description;
-      seeLive.href = projects[index].seeLive;
-      seeSrc.href = projects[index].seeSource;
-    }));
-  });
-});
+export default projects;
