@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-[Live Demo](https://frabjous-pudding-2f0349.netlify.app/)
+[Live Demo](https://ayesha-arshad-portfolio-2f0349.netlify.app/)
 
 ![](./images/Multi-Devicer-Web-mockup.png)
 
